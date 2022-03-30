@@ -1,0 +1,30 @@
+body {
+    background-color: orange;
+}
+
+.menu {
+    background-color: black;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+}
+
+menu ul li a:hover {
+    background-color: darkgray;
+}
