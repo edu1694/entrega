@@ -15,7 +15,6 @@
     
     .menu ul li {
         display: inline-block;
-        margin-right: 20px;
     }
     
     .menu ul li a {
@@ -26,11 +25,12 @@
     }
     
     .menu ul li a:hover {
-        background-color: #c4695dd7;
+        background-color: #030303d7;
     }
     
     .item-r {
         margin-top: 15px;
+        margin-right: 10px;
         float: right;
     }
     
@@ -41,4 +41,38 @@
         margin-left: 20px;
     }
     
-    @media screen and (max-width:720px) {}
+    ul,
+    ol {
+        list-style: none;
+    }
+    
+    .menu>li {
+        float: left;
+    }
+    
+    .menu li a {
+        background-color: rgb(32, 32, 32);
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 12px;
+        display: block;
+    }
+    
+    .menu li ul {
+        display: none;
+        position: absolute;
+        min-width: 140px;
+    }
+    
+    .menu li:hover>ul {
+        display: block;
+    }
+    
+    .menu li ul li {
+        position: relative;
+    }
+    
+    .menu li ul li ul {
+        right: -140px;
+        top: 0px;
+    }
