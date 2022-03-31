@@ -1,78 +1,73 @@
-    body {
-        background-color: #4642B8;
-        font-family: 'Courier New', Courier, monospace;
-    }
-    
-    .menu {
-        background-color: rgb(32, 32, 32);
-    }
-    
-    .menu ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .menu ul li {
-        display: inline-block;
-    }
-    
-    .menu ul li a {
-        color: white;
-        display: block;
-        padding: 20px 20px;
-        text-decoration: none;
-    }
-    
-    .menu ul li a:hover {
-        background-color: #030303d7;
-    }
-    
-    .item-r {
-        margin-top: 15px;
-        margin-right: 10px;
-        float: right;
-    }
-    
-    .logo-nav {
-        width: 150px;
-        height: 100px;
-        margin-right: 20px;
-        margin-left: 20px;
-    }
-    
-    ul,
-    ol {
-        list-style: none;
-    }
-    
-    .menu>li {
-        float: left;
-    }
-    
-    .menu li a {
-        background-color: rgb(32, 32, 32);
-        color: #fff;
-        text-decoration: none;
-        padding: 10px 12px;
-        display: block;
-    }
-    
-    .menu li ul {
-        display: none;
-        position: absolute;
-        min-width: 140px;
-    }
-    
-    .menu li:hover>ul {
-        display: block;
-    }
-    
-    .menu li ul li {
-        position: relative;
-    }
-    
-    .menu li ul li ul {
-        right: -140px;
-        top: 0px;
-    }
+.menu {
+    background-color: rgb(32, 32, 32);
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    color: white;
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: #030303d7;
+}
+
+.item-r {
+    margin-top: 15px;
+    margin-right: 10px;
+    float: right;
+}
+
+.logo-nav {
+    width: 150px;
+    height: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.menu>li {
+    float: left;
+}
+
+.menu li a {
+    background-color: rgb(32, 32, 32);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+}
+
+.menu li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.menu li:hover>ul {
+    display: block;
+}
+
+.menu li ul li {
+    position: relative;
+}
+
+.menu li ul li ul {
+    right: -140px;
+    top: 0px;
+}
