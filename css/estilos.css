@@ -1,73 +1,75 @@
-.menu {
-    background-color: rgb(32, 32, 32);
-}
-
-.menu ul {
-    list-style: none;
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.menu ul li {
+body {
+    background: #292929;
+    font-family: 'calibri';
+}
+
+header {
+    background: #000102;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.menu {
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
     display: inline-block;
 }
 
-.menu ul li a {
-    color: white;
-    display: block;
-    padding: 20px 20px;
-    text-decoration: none;
+.menu img {
+    width: 120px;
+    height: 50px;
+    float: left;
+    padding: 8px;
 }
 
-.menu ul li a:hover {
-    background-color: #030303d7;
-}
-
-.item-r {
-    margin-top: 15px;
-    margin-right: 10px;
+.menu nav {
     float: right;
 }
 
-.logo-nav {
-    width: 150px;
-    height: 100px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-ul,
-ol {
+.menu nav ul li {
     list-style: none;
-}
-
-.menu>li {
+    margin-left: 75px;
+    padding: 12px 0;
     float: left;
-}
-
-.menu li a {
-    background-color: rgb(32, 32, 32);
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 12px;
-    display: block;
-}
-
-.menu li ul {
-    display: none;
-    position: absolute;
-    min-width: 140px;
-}
-
-.menu li:hover>ul {
-    display: block;
-}
-
-.menu li ul li {
     position: relative;
 }
 
-.menu li ul li ul {
-    right: -140px;
-    top: 0px;
+.menu nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+.menu nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+.menu nav ul li a:hover::before {
+    width: 100%;
+}
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.carrusel img {
+    height: 600px;
 }
