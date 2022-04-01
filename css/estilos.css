@@ -6,7 +6,7 @@
 
 body {
     background: #292929;
-    font-family: 'calibri';
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -65,11 +65,16 @@ header {
 }
 
 .carrusel {
-    display: flex;
-    justify-content: center;
-    margin: 0 10px;
+    display: block;
+    margin: auto;
+    width: 800px;
 }
 
 .carrusel img {
     height: 600px;
+    width: 100%!important;
+}
+
+.blog-body {
+    margin: 10px 150px;
 }
