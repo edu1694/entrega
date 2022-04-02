@@ -19,14 +19,14 @@ header {
 
 .menu {
     width: 900px;
-    margin: 0 auto;
+    margin-top: 20px;
     position: relative;
     display: inline-block;
 }
 
 .menu img {
-    width: 120px;
-    height: 50px;
+    width: 200px;
+    height: 70px;
     float: left;
     padding: 8px;
 }
@@ -45,7 +45,7 @@ header {
 
 .menu nav ul li a {
     text-decoration: none;
-    color: #444;
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
@@ -53,7 +53,7 @@ header {
     display: block;
     content: '';
     width: 0%;
-    background: #444;
+    background: rgb(255, 255, 255);
     height: 5px;
     top: 0;
     position: absolute;
@@ -67,7 +67,7 @@ header {
 .carrusel {
     display: block;
     margin: auto;
-    width: 800px;
+    width: 1300px;
 }
 
 .carrusel img {
@@ -76,5 +76,9 @@ header {
 }
 
 .blog-body {
+    margin: 10px 150px;
+}
+
+.progress {
     margin: 10px 150px;
 }
