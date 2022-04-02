@@ -67,7 +67,7 @@ header {
 .carrusel {
     display: block;
     margin: auto;
-    width: 1300px;
+    width: 100%;
 }
 
 .carrusel img {
@@ -76,9 +76,32 @@ header {
 }
 
 .blog-body {
-    margin: 10px 150px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.blog-body img {
+    height: 250px;
+    width: 100%
 }
 
 .progress {
-    margin: 10px 150px;
+    display: block;
+    margin: 5px -1;
+    width: 100%;
+}
+
+.card {
+    float: left;
+    margin: 5px;
+    height: 30%;
+    width: 48%;
+}
+
+.card-body {
+    background: #292929;
+}
+
+.card-body p {
+    color: white;
 }
