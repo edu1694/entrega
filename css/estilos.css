@@ -115,3 +115,12 @@ header {
     width: 20%;
     height: 10%;
 }
+
+@media screen and (max-width: 713px) {
+    .card {
+        margin: 5px;
+        height: 30%;
+        width: 100%;
+        float: none;
+    }
+}

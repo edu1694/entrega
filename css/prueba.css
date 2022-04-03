@@ -1,1 +1,17 @@
-.collapse {}
+/*Solo para distinguir el contenido*/
+
+.contenido {
+    height: 100px;
+    background-color: red
+}
+
+
+/*Seleccionamos el menú solo cuando está desplegado y le agregamos padding*/
+
+.navbar-collapse.collapse.show {
+    padding-bottom: 2em;
+}
+
+#navbarSupportedContent {
+    display: block;
+}
