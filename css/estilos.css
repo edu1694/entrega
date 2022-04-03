@@ -105,3 +105,13 @@ header {
 .card-body p {
     color: white;
 }
+
+.title-new span {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.media img {
+    width: 20%;
+    height: 10%;
+}
