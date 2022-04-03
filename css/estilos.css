@@ -1,67 +1,6 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
     background: #292929;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-    background: #000102;
-    width: 100%;
-    clear: both;
-    content: '';
-    display: table;
-}
-
-.menu {
-    width: 900px;
-    margin-top: 20px;
-    position: relative;
-    display: inline-block;
-}
-
-.menu img {
-    width: 200px;
-    height: 70px;
-    float: left;
-    padding: 8px;
-}
-
-.menu nav {
-    float: right;
-}
-
-.menu nav ul li {
-    list-style: none;
-    margin-left: 75px;
-    padding: 12px 0;
-    float: left;
-    position: relative;
-}
-
-.menu nav ul li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-}
-
-.menu nav ul li a::before {
-    display: block;
-    content: '';
-    width: 0%;
-    background: rgb(255, 255, 255);
-    height: 5px;
-    top: 0;
-    position: absolute;
-    transition: width 0.2s;
-}
-
-.menu nav ul li a:hover::before {
-    width: 100%;
 }
 
 .carrusel {
