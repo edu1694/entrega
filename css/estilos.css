@@ -14,6 +14,10 @@
     margin: 0 auto;
 }
 
+.blog-body button {
+    margin: 30px 0;
+}
+
 .blog-body img {
     height: 250px;
     width: 100%
@@ -71,10 +75,7 @@
     .media2 .media-body {
         display: block;
     }
-    .title-new span {
-        display: none;
-    }
-    .title-new h1 {
+    .title-new h2 {
         font-size: x-large;
         margin: 10px;
     }
