@@ -1,3 +1,7 @@
+body {
+    background: #a7a7a7;
+}
+
 .carrusel {
     display: block;
     margin: auto;
@@ -37,7 +41,7 @@
 }
 
 .card-body {
-    background: #292929;
+    background: rgb(61, 61, 61)
 }
 
 .card-body p {
