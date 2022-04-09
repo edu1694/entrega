@@ -1,0 +1,51 @@
+.limites {
+    margin: initial;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    float: left;
+    width: 250px;
+    height: 450px;
+}
+
+.contenedor-productos {
+    float: left;
+    height: 50%;
+    width: 80%;
+}
+
+.btns {
+    position: absolute;
+    bottom: 15px;
+}
+
+.contenedor-carrito {
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: 75%;
+    position: fixed;
+    height: 50%;
+    width: 20%;
+    border: black;
+}
+
+@media screen and (max-width: 713px) {
+    .contenedor-carrito {
+        position: relative;
+        margin: initial;
+    }
+    .contenedor-productos {
+        float: left;
+        height: 50%;
+        width: 100%;
+    }
+    .limites {
+        margin: initial;
+        margin-top: 15px;
+        margin-right: 15px;
+        margin-bottom: 20px;
+        float: left;
+        width: 100%;
+        height: 450px;
+    }
+}
