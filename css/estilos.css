@@ -8,19 +8,14 @@ body {
     width: 100%;
 }
 
-.carrusel h3 {
-    background-color: #29292928;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-.carrusel p {
-    background-color: #29292928;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
 .carrusel img {
     height: 600px;
     width: 100%;
+}
+
+.color-carru {
+    background-color: #0000005d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .blog-body {
