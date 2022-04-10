@@ -1,7 +1,21 @@
+body {
+    background-color: whitesmoke;
+}
+
 .carrusel {
     display: block;
     margin: auto;
     width: 100%;
+}
+
+.carrusel h3 {
+    background-color: #29292928;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.carrusel p {
+    background-color: #29292928;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .carrusel img {
@@ -51,11 +65,20 @@
 
 .media img {
     width: 20%;
-    height: 10%;
+    height: 200px;
 }
 
 .media2 .media-body {
     display: none;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
 }
 
 @media screen and (max-width: 713px) {
@@ -67,7 +90,7 @@
     }
     .media img {
         width: 100%;
-        height: 10%;
+        height: 250px;
     }
     .media-body {
         display: none;
