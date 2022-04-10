@@ -19,3 +19,24 @@ fieldset {
     font-size: 35px;
     color: black;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+footer {
+    background: #111;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    align-self: flex-end;
+}
+
+#message {
+    min-height: 200px;
+}

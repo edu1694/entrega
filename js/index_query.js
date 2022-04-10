@@ -4,5 +4,25 @@ $('#btn-index').click(function() {
 });
 
 $('#btn-contac').click(function resetform() {
+    let nombre = $('#fname').val();
+    let apellido = $('#lname').val();
+    let message = $('#message').val();
+    if (nombre.length < 3) {
+        alert('Debe tener minimo 3 caracterres y es obligatorio');
+        return false;
+    }
+    if (apellido.length < 3) {
+        alert('Debe tener minimo 3 caracterres y es obligatorio');
+        return false;
+    }
+    if ($("#email").val().indexOf('@', 0) == -1 || $("#email").val().indexOf('.', 0) == -1) {
+        alert('El correo electrónico introducido no es correcto.');
+        return false;
+    }
+    if (message.length < 10) {
+        alert('Debe tener minimo 10 caracterres y es obligatorio');
+        return false;
+    }
+    alert('Sus datos se han guardado conrrectamente');
     $("form input[type=text] , form textarea").each(function() { this.value = '' });
 });
