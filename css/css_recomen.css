@@ -10,8 +10,7 @@
 
 .contenedor-productos {
     float: left;
-    height: 50%;
-    width: 80%;
+    width: 75%;
 }
 
 .btns {
@@ -29,10 +28,12 @@
     border: black;
 }
 
-@media screen and (max-width: 713px) {
+@media screen and (max-width: 1000px) {
     .contenedor-carrito {
         position: relative;
         margin: initial;
+        margin-left: 5%;
+        width: 80%;
     }
     .contenedor-productos {
         float: left;
@@ -45,7 +46,7 @@
         margin-right: 15px;
         margin-bottom: 20px;
         float: left;
-        width: 100%;
+        width: 45%;
         height: 450px;
     }
 }
