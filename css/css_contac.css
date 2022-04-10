@@ -1,0 +1,22 @@
+fieldset {
+    width: 100%;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.titulo {
+    text-align: center;
+    color: black;
+    font-size: 27px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: black;
+}
