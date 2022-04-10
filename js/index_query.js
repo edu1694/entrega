@@ -8,11 +8,11 @@ $('#btn-contac').click(function resetform() {
     let apellido = $('#lname').val();
     let message = $('#message').val();
     if (nombre.length < 3) {
-        alert('Debe tener minimo 3 caracterres y es obligatorio');
+        alert('El nombre debe tener minimo 3 caracterres y es obligatorio');
         return false;
     }
     if (apellido.length < 3) {
-        alert('Debe tener minimo 3 caracterres y es obligatorio');
+        alert('El apellido debe tener minimo 3 caracterres y es obligatorio');
         return false;
     }
     if ($("#email").val().indexOf('@', 0) == -1 || $("#email").val().indexOf('.', 0) == -1) {
@@ -20,7 +20,7 @@ $('#btn-contac').click(function resetform() {
         return false;
     }
     if (message.length < 10) {
-        alert('Debe tener minimo 10 caracterres y es obligatorio');
+        alert('La descipcion debe tener minimo 10 caracterres y es obligatorio');
         return false;
     }
     alert('Sus datos se han guardado conrrectamente');
