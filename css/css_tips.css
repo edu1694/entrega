@@ -8,17 +8,12 @@
     margin: 60px;
 }
 .articulos{
-    width: 80%;
-    border-right: 2px solid black;
+    width: 100%;
 }
 .secciones{
     display: flex;
     align-items: center;
     padding: 40px;
-}
-.menu-secundario{
-    width: 20%;
-    margin-top: 60px;
 }
 .menu-secundario a{
     display: block;
@@ -27,11 +22,30 @@
     margin-bottom: 50px;
 }
 
-footer{
+footer {
+    background: #111;
+    color: #fff;
     width: 100%;
-    height: 40px;
     text-align: center;
-    padding: 10px;
-    background-color: black;
-    color: white;
+    padding: 1em;
+    align-self: flex-end;
+}
+
+.secciones img{
+    width: 400px;
+    height: 400px;
+    border-radius: 40%;
+    align-items: top;
+}
+.img1{
+    display: none;
+}
+
+@media screen and (max-width: 813px){
+    .img2{
+        display: none;
+    }
+    .img1{
+        display: block;
+    }
 }
