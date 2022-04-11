@@ -54,6 +54,26 @@
     display: none;
 }
 
+.title-new2 h1 {
+    font-size: xx-large;
+    margin: 20px;
+}
+
+.title-new2 hr{
+    color: black;
+    background-color: black;
+    height: 6;
+
+}
+footer {
+    background: #111;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    align-self: flex-end;
+}
+
 @media screen and (max-width: 713px) {
     .card {
         margin: 5px;
@@ -74,8 +94,19 @@
     .title-new span {
         display: none;
     }
-    .title-new h1 {
+    .title-new h2 {
         font-size: x-large;
         margin: 10px;
+    }
+    .title-new2 h1 {
+        font-size: xx-large;
+        margin: 10px;
+    }
+    .title-new2 hr{
+        color: black;
+        background-color: black;
+        height: 6;
+        
+
     }
 }
