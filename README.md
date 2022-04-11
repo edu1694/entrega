@@ -1,4 +1,3 @@
-"John Lopez" 
-"Javier Gutierrez"
-"Joseft "
-"Eduardo Cardenas"
+"Integrantes"
+
+"John Lopez, Javier Gutierrez, Joseft, Eduardo Cardenas" 
