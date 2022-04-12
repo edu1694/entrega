@@ -1,6 +1,6 @@
 "Integrantes"
 
-"John Lopez, Javier Gutierrez, Joseft, Eduardo Cardenas"
+"John Lopez, Javier Gutierrez, Joseph Rios, Eduardo Cardenas"
 
 "Repositorio GIT"
 
