@@ -33,7 +33,8 @@
     position: absolute;
     bottom: 12%;
 }
-.blog-body{
+
+.blog-body {
     margin-top: 100px;
 }
 
@@ -72,14 +73,4 @@
         font-size: 15px;
         font-weight: bold;
     }
-}
-
-footer {
-    width: 100%;
-    height: 40px;
-    text-align: center;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    float: left;
 }
