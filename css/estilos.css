@@ -67,15 +67,6 @@ body {
     display: none;
 }
 
-footer {
-    width: 100%;
-    height: 40px;
-    text-align: center;
-    padding: 10px;
-    background-color: black;
-    color: white;
-}
-
 @media screen and (max-width: 713px) {
     .card {
         margin: 5px;
