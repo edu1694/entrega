@@ -20,7 +20,7 @@ $('#btn-contac').click(function resetform() {
         return false;
     }
     if (message.length < 10) {
-        alert('La descipcion debe tener minimo 10 caracterres y es obligatorio');
+        alert('La descripcion debe tener minimo 10 caracterres y es obligatorio');
         return false;
     }
     alert('Sus datos se han guardado conrrectamente');
