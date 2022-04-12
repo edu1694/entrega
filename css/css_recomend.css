@@ -64,15 +64,6 @@
     background-color: black;
     height: 6;
 
-}
-footer {
-    background: #111;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    padding: 1em;
-    align-self: flex-end;
-}
 
 @media screen and (max-width: 713px) {
     .card {
