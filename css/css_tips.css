@@ -15,21 +15,6 @@
     align-items: center;
     padding: 40px;
 }
-.menu-secundario a{
-    display: block;
-    text-align: center;
-    color: black;
-    margin-bottom: 50px;
-}
-
-footer {
-    background: #111;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    padding: 1em;
-    align-self: flex-end;
-}
 
 .secciones img{
     width: 400px;
@@ -40,7 +25,9 @@ footer {
 .img1{
     display: none;
 }
-
+.blog-body{
+    margin-top: 10px;
+}
 @media screen and (max-width: 813px){
     .img2{
         display: none;
