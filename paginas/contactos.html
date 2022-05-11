@@ -8,6 +8,7 @@
 
     <link rel="shortcut icon" href="../img/icono_png-min.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js ">
     <link rel="stylesheet" href="../css/css_contac.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>PET CHILE</title>
@@ -47,67 +48,61 @@
     </header>
 
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="well well-sm">
-                    <form class="form-horizontal" method="post">
-                        <fieldset>
-                            <legend class="titulo">Cuentanos tu caso</legend>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Cuentanos tu historia</h3>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal" id="formulario_mascota">
 
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i
-                                        class="fa fa-user bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="fname" name="name" type="text" placeholder="Nombre*" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i
-                                        class="fa fa-user bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="lname" name="name" type="text" placeholder="Apellido*" class="form-control">
-                                </div>
-                            </div>
+                    <div class="form-group">
+                        <label for="fullname" class="col-sm-2 control-label">Nombre completo</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="fullname" name="fullname" class="form-control">
+                        </div>
+                    </div>
 
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i
-                                        class="fa fa-envelope-o bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="email" name="email" type="text" placeholder="Correo*" class="form-control">
-                                </div>
-                            </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">Correo</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="email" name="email" class="form-control">
+                        </div>
+                    </div>
 
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i
-                                        class="fa fa-phone-square bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <input id="phone" name="phone" type="text" placeholder="Celular" class="form-control">
-                                </div>
-                            </div>
+                    <div class="form-group">
+                        <label for="comments" class="col-sm-2 control-label">Cuentanos aquí tu historia</label>
+                        <div class="col-sm-10">
+                            <textarea name="comments" id="comments" cols="50" rows="5" class="form-control"></textarea>
+                        </div>
+                    </div>
 
-                            <div class="form-group">
-                                <span class="col-md-1 col-md-offset-2 text-center"><i
-                                        class="fa fa-pencil-square-o bigicon"></i></span>
-                                <div class="col-md-8">
-                                    <textarea class="form-control" id="message" name="message" placeholder="Escribe tu hisoria*" rows="7"></textarea>
-                                </div>
-                            </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <label for="luckynumber">Elegi tu tipo de mascota</label>
+                            <select name="luckynumber" id="luckynumber" class="form-control">
+                                <option value="">--Selecciona tu tipo de mascota--</option>
+                                <option value="Perro">Perro</option>
+                                <option value="Gato">Gato</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                        </div>
+                    </div>
 
-                            <div class="form-group">
-                                <div class="col-md-12 text-center">
-                                    <button type="button" class="btn btn-secondary btn-lg" id="btn-contac">Enviar</button>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <input type="submit" class="btn btn-primary" value="Enviar" />
+                        </div>
+                    </div>
+
+
+                </form>
             </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="../js/index_query.js"></script>
+    <script src="../js/validador.js"></script>
 </body>
 
 </html>
