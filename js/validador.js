@@ -14,7 +14,7 @@ $(document).ready(function() {
             },
             comments: {
                 required: true,
-                minlength: 10
+                minlength: 20
             },
             email: {
                 required: true,
@@ -29,7 +29,7 @@ $(document).ready(function() {
             },
             comments: {
                 required: "Por favor ingresa un comentario",
-                minlength: "Tu nombre debe ser de no menos de 10 caracteres"
+                minlength: "Tu nombre debe ser de no menos de 20 caracteres"
             },
             email: "Por favor ingresa un correo válido",
         },
