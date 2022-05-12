@@ -59,11 +59,11 @@
     margin: 20px;
 }
 
-.title-new2 hr{
+.title-new2 hr {
     color: black;
     background-color: black;
     height: 6;
-
+}
 
 @media screen and (max-width: 713px) {
     .card {
@@ -93,11 +93,9 @@
         font-size: xx-large;
         margin: 10px;
     }
-    .title-new2 hr{
+    .title-new2 hr {
         color: black;
         background-color: black;
         height: 6;
-        
-
     }
 }

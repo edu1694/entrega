@@ -25,11 +25,11 @@ $(document).ready(function() {
         messages: {
             fullname: {
                 required: "Por favor ingresa tu nombre completo",
-                minlength: "Tu nombre debe ser de no menos de 5 caracteres"
+                minlength: "Debe tener un minimo de 5 caracteres"
             },
             comments: {
                 required: "Por favor ingresa un comentario",
-                minlength: "Tu nombre debe ser de no menos de 20 caracteres"
+                minlength: "Tu historia debe tener un minimo de 20 caracteres"
             },
             email: "Por favor ingresa un correo válido",
         },

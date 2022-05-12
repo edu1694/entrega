@@ -1,10 +1,16 @@
-.text-center{
+.text-center {
     margin: 0 auto;
     display: block;
     margin-top: 10px;
 }
 
-.btn-cargar{
+#btn-cargar {
     width: 70%;
-    margin-top: 5px;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: block;
+}
+
+.title {
+    text-align: center;
 }
