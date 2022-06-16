@@ -1,0 +1,38 @@
+#contenido {
+    width: 80%;
+    margin: auto;
+    max-width: 1280px;
+    min-height: 100vh;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.producto {
+    width: 25%;
+    margin-top: 20px;
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.productos .detalle {
+    padding: 5px;
+}
+
+.producto .contenedor_producto {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.contenedor_producto img {
+    width: 60%;
+    height: 250px;
+    border-radius: 50px;
+}

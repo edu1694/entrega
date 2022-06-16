@@ -1,0 +1,75 @@
+{% extends 'app/base.html' %} {% load static %} {% block css %}
+
+<link rel="stylesheet" href="{% static 'app/css/estilos.css' %}">{% endblock %} {% block js %} {% endblock %} {% block contenido %}
+<div class="carrusel">
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" data-src="holder.js/900x300?auto=yes&bg=777&fg=555&text=First slide" src="{% static 'app/img/carrusel_recomendaciones-min.jpg' %}" alt="First slide">
+                    <div class="carousel-caption">
+                        <h2 class="color-carru">Somos la mejor pagina para tus mascotas</h2>
+                        <p class="color-carru">Tus animeles estarán felices con nuestra pagina</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="paginas/Tienda.html"><img class="d-block w-100" data-src="holder.js/900x300?auto=yes&bg=666&fg=444&text=Second slide" src="{% static 'app/img/carrusel_tienda-min.jpg' %}" alt="Second slide"></a>
+                    <div class="carousel-caption">
+                        <h2 class="color-carru">Los mejores articulos para tus mascotas</h2>
+                        <p class="color-carru">Preciona aquí</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Atras</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+
+    </div>
+</div>
+<div class="progress">
+    <div class="progress-bar bg-dark" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="blog-body">
+    <div>
+        <div class="card-group">
+            <div class="card">
+                <a href="{% url 'tip5' %}"><img class="card-img-top" src="{% static 'app/img/geko-con-su-juguete.jpg' %}" alt="Card image cap"></a>
+                <div class="card-body">
+                    <p>LOS MEJORES TIPS PARA EL CUIDADO DE ANIMALES EXOTICOS</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://www.mercadolibre.cl/alimento-leonardo-kitten-para-gato-de-temprana-edad-sabor-mix-en-bolsa-de-75kg/p/MLC17496696?pdp_filters=item_id:MLC946834578#searchVariation=MLC17496696&position=5&search_layout=stack&type=pad&tracking_id=13e8267d-ee1a-4a03-a161-e98636a82c1f"><img class="card-img-top" src="{% static 'app/img/incio_compra-min.jpg' %}" alt="Card image cap"></a>
+                <div class="card-body">
+                    <p>Comida de gato de temprana edad en bolsa ¡Nuevo y exclusivo, compra aquí!</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <a href="{% url 'recomendaciones' %}"><img class="card-img-top" src="{% static 'app/img/Mascotas-Felices-min.jpg' %}" alt="Card image cap"></a>
+                <div class="card-body">
+                    <p>Vee la mejores recomendaciones de nuestra pagina</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="{% url 'contacto' %}"><img class="card-img-top" src="{% static 'app/img/cuentosdeperrosninos-min.jpg' %}" alt="Card image cap"></a>
+                <div class="card-body">
+                    <p>Cuentanos tus historias con tus mascotas y podras salir en nuestra pagina</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

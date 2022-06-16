@@ -1,0 +1,30 @@
+.card {
+    color: black;
+    background-color: rgb(252, 248, 248);
+}
+
+.card input {
+    width: 95%;
+}
+
+.card #btn-ingrear {
+    width: 13%;
+}
+
+.card {
+    margin: auto 15%;
+    margin-top: 30px;
+    width: 65%;
+}
+
+.card textarea {
+    width: 95%;
+}
+
+.card select {
+    width: 95%;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+}

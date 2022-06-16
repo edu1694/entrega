@@ -1,0 +1,148 @@
+{% extends 'app/base.html' %} {% load static %} {% block css %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+{% endblock %} 
+{% block js %} 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+{% endblock %} {% block contenido %}
+<div class="container">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'app/img/cat.jfif' %}" width="800" height="400" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="text-dark">LAS MEJORES RECOMENDACIONES PARA SUS MASCOTAS</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'app/img/eukanuba-hub-landing-and-range-landing-hero.jfif' %}" width="800" height="400" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h3 class="text-dark">LAS MEJORES RECOMENDACIONES PARA SUS MASCOTAS</h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'app/img/Webs-para-mascotas.webp' %}" width="800" height="400" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h3 class="text-dark">LAS MEJORES RECOMENDACIONES PARA SUS MASCOTAS</h3>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--Cards  -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-3 m-4 d-flex justify-conten-center" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-20">
+                        <img src="{% static 'app/img/juguetes-perros-y-gatos-4_072ea20f_1200x1714.jpg' %}" width="370" height="200" class="img-fluid rounded-start" alt="" width="500" height="100">
+                    </div>
+                    <div class="col-md-20">
+                        <div class="card-body">
+                            <h5 class="card-title">MESA DE GIMNASIA PARA GATOS</h5>
+                            <p class="card-text">Esta mesa de madera es la favorita de los gatos porque tiene bolas de gran tamaño que arrastrar con sus patas, pero además podrán jugar a cazar. Les encantará porque desarrollar su sincronización y su inteligencia.</p>
+                            <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card 2 -->
+        <div class="col-md-4">
+            <div class="card mb-3 m-4 d-flex justify-conten-center" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-16">
+                        <img src="{% static 'app/img/juguetes-perros-y-gatos-1_8241f647_1200x1714.jpg' %}" width="370" height="200" class="img-fluid rounded-start" alt=".">
+                    </div>
+                    <div class="col-md-20">
+                        <div class="card-body">
+                            <h5 class="card-title">RUEDA DE LA FORTUNA</h5>
+                            <p class="card-text">Este juguete despertará la habilidad y destreza de tu perro y tiene distintos niveles de dificultar para asegurar horas de diversión. Sin más, el perro debe girar la rueda con la pata o el hocico.</p>
+                            <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card 3 -->
+        <div class="col-md-4">
+            <div class="card mb-3 m-4 d-flex justify-conten-center" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-16">
+                        <img src="{% static 'app/img/juguetes-perros-y-gatos-2_992e0d96_1200x1714.jpg' %}" width="370" height="200" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-20">
+                        <div class="card-body">
+                            <h5 class="card-title">RASCADOR CON LABERINTO</h5>
+                            <p class="card-text">A tu gatete le encantará este rascador con palo de sisal, que además incluye un juguete con pluma para 'cazar' y una base que es un laberinto con bolitas. Es un juguete muy completo y del que jamás se aburren</p>
+                            <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card 4 -->
+        <div class="col-md-4">
+            <div class="card mb-3 m-4 d-flex justify-conten-center" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-16">
+                        <img src="{% static 'app/img/juguetes-perros-y-gatos-6_bcfc7347_1200x1714.jpg' %}" width="370" height="200" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-20">
+                        <div class="card-body">
+                            <h5 class="card-title">CAZADOR DE MARIPOSA PARA GATOS</h5>
+                            <p class="card-text">Este juguete consiste en cazar una mariposa que hace movimientos realistas en 360 grados. Estimula el instinto de caza y acecho mientras le entretiene y juega.</p>
+                            <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card 5 -->
+        <div class="col-md-4">
+            <div class="card mb-3 m-4 d-flex justify-conten-center" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-16">
+                        <img src="{% static 'app/img/juguetes-perros-y-gatos-5_a7e45050_1200x1714.jpg' %}" width="370" height="200" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-20">
+                        <div class="card-body">
+                            <h5 class="card-title">TÚNEL PARA GATOS</h5>
+                            <p class="card-text">Este túnel que simula un cañón es perfecto para que tu gato juegue, se esconda y se divierta durante todo el día. También cuenta con una mecha hecha de plumas que aporta otro elemento de juego.</p>
+                            <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- card 6 -->
+        <div class="col-md-4">
+            <div class="card mb-3 m-4 d-flex justify-conten-center" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-16">
+                        <img src="{% static 'app/img/juguetes-perros-y-gatos-10_36f0ab60_1200x1714.jpg' %}" width="370" height="200" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-20">
+                        <div class="card-body">
+                            <h5 class="card-title">SAFESTIX DE KONG PARA LANZAR</h5>
+                            <p class="card-text">Para pasar un momento inolvidable con tu perro este juguete KONG de lanzamiento es perfecto. Simula una cuerda de plástico robusto y flexible, segura para los dientes y que puede morder sin riesgos.</p>
+                            <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

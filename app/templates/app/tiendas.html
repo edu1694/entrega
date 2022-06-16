@@ -1,0 +1,32 @@
+{% extends 'app/base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'app/css/ccs_tienda.css' %}"> {% endblock %} {% block js %} {% endblock %} 
+
+{% block contenido %}
+<br>
+<br>
+<br>
+{% load humanize %}
+<div class="productos">
+    {% for p in productos %}
+    <div class="producto">
+
+        <div class="contenedor_producto">
+            {% if p.foto %}
+            <img src="{{p.foto.url}}"> 
+            {% endif %}
+            <div class="detalle">
+                <h2>{{p.nombre | title}}</h2>
+                <h5>{{p.marca | capfirst}}</h5>
+                <h6>{{p.descripcion}}</h6>
+                <h3>${{p.precio | intcomma}}</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+    {% endfor %}
+
+</div>
+
+{% endblock %}

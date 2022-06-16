@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> {% load static %} {% block css %} {% endblock %} {% block js %} {% endblock %}
+    <link rel="shortcut icon" href="{% static 'app/img/icono_png-min.png' %}">
+    <link rel="stylesheet" href="{% static 'app/css/css_base.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+
+    <title>PET CHILE</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img src="{% static 'app/img/icono_png-min.png' %}" width="40" height="40" class="d-inline-block align-top" alt=""> PET CHILE
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'home' %}">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'tips' %}">Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'recomendaciones' %}">Recomendaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'tiendas' %}">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'api' %}">Api</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contacto' %}">Contactos</a>
+                    </li>
+                    {% if perms.app.add_producto %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'agregar_producto' %}">Agregar tienda</a>
+                    </li>
+                    {% endif %}
+                    {% if perms.app.view_producto %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'listar_productos' %}">Listar tienda</a>
+                    </li>
+                    {% endif %}
+                    {% if perms.app.view_contacto %}
+                    <li>
+                        <a class="nav-link" href="{% url 'listar_contacto' %}">Lista contacto</a>
+                    </li>
+                    {% endif %}
+                    {% if user.is_authenticated %}
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">@{{ user.username }}</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'logout' %}">Cerrar session</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'login' %}">Iniciar sesesion</a>
+                    </li>
+                    {% endif %}
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="contenido">
+        {% block contenido %} {% endblock %}
+
+    </div>
+    <div>
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="{% static 'app/img/icono_png-min.png' %}" alt="Logo de SLee Dw">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Somos una empresa enfocada 100% en el cuidado de mascotas, entregando tips y recomendaciones, para el cuidado de tu mascota. Tenemos 20 años de exprecias con diferente tipos de mascotas y el amor que le entregamos es unico!!
+                    </p>
+                    <p>En nuestra tienda te entregamos los productos más novedosos y de calidad.
+                    </p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                    <br>
+                    <h2>UBICACION</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416.1342625301938!2d-70.66364463204889!3d-33.447375933039424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a9f73fdacf%3A0x31cd24eb1f4e15fc!2sPA370-Parada%209%20%2F%20(M)%20Los%20H%C3%A9roes!5e0!3m2!1ses-419!2scl!4v1655280341117!5m2!1ses-419!2scl" width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2022 <b>PETCHILE</b> - Todos los Derechos Reservados.</small>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    {% if messages %} {% for m in messages %}
+    <script>
+        Swal.fire({
+            "title": "Felicitaciones",
+            "text": "{{m}}",
+            "icon": "success",
+        })
+    </script>
+    {% endfor %} {% endif %}
+</body>

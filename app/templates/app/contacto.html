@@ -1,0 +1,32 @@
+{% extends 'app/base.html' %} {% load static %}{% block css %}
+<link rel="stylesheet" href="{% static 'app/css/css_contacto.css' %}"> {% endblock %} {% block contenido %} {% load crispy_forms_tags %}
+<br>
+<br>
+
+<div class="container">
+
+    <div class="col-12 col-md-16 offset-md-2">
+        <div class="card">
+            <div class="card-body">
+                <h1>Contactanos!</h1>
+                <form action="" class="form-group-sm" method="post">
+                    {% csrf_token %}
+                    <br> {{ form | crispy }}
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" id="btnEnviar" class="btn btn-secondary">Enviar</button>
+                    </div>
+                    <br>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}

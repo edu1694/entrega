@@ -1,0 +1,38 @@
+{% extends 'app/base.html' %} {% load static %} 
+{% block css %}
+<link rel="stylesheet" href="{% static 'app/css/ccs_tienda.css' %}"> 
+{% endblock %}
+
+{% block contenido %} 
+<br>
+<br>
+<br>
+{% load crispy_forms_tags %}
+
+            <div class="row">
+                <div class="col-12 col-md-6 offset-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Editar Producto</h3>
+                            <hr>
+                        <form action="" method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {{ form | crispy}}
+                            <br>
+                            <div class="d-flex justify-content-center">
+                                
+                                <input type="reset" value="Cancelar" class="btn btn-secondary">
+                                &nbsp; 
+                                &nbsp;
+                                <input type="submit" value="Editar" class="btn btn-primary">
+                            </div>
+                            
+                        </form>
+                        {{ mensaje }}
+                </div>
+            </div>
+    </div>
+</div>
+
+
+{% endblock %} 

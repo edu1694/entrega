@@ -1,0 +1,79 @@
+{% extends 'app/base.html' %} {% load static %} {% block css %}
+
+<link rel="stylesheet" href="{% static 'app/css/titulo.css' %}">
+<link rel="stylesheet" href="{% static 'app/css/css_recomendacione.css' %}"> {% endblock %} {% block js %} {% endblock %} {% block contenido %}
+<div class="tarjeta">
+
+    <!-- Numero 1 -->
+    <div class="card">
+        <div class="face front">
+            <img src="{% static 'app/img/perrito_1.jpg' %}" alt="">
+            <h4>Como cuidar a tus perritos recién nacidos</h4>
+        </div>
+        <div class="face back">
+            <h4>Como cuidar a tus perritos recién nacidos</h4>
+            <p>Sabes qué hacer con tus perritos recién nacidos? en este tip te mostramos los mejores consejos para hacerlos crecer grandes y fuertes.</p>
+            <div class="link">
+                <a href="{% url 'tip1' %}">Mas detalles</a>
+            </div>
+        </div>
+    </div>
+    <!-- Numero 2 -->
+    <div class="card">
+        <div class="face front">
+            <img src="{% static 'app/img/perro-gato-en-casa-1-t.jpg' %}" alt="">
+            <h4>Nombres para tus perritos y gatitos!</h4>
+        </div>
+        <div class="face back">
+            <h4>Nombres para tus perritos y gatitos!</h4>
+            <p>Sabemos lo dificil que es elegir el nombre de tus mascotitas, aquí te mostramos unos nombres bonitos y únicos!</p>
+            <div class="link">
+                <a href="{% url 'tip2' %}">Mas detalles</a>
+            </div>
+        </div>
+    </div>
+    <!-- Numero 3 -->
+    <div class="card">
+        <div class="face front">
+            <img src="{% static 'app/img/perro-golden-tosiendo.jpg' %}" alt="">
+            <h4>¿Sabes qué hacer cuando tu mascota se atora?</h4>
+        </div>
+        <div class="face back">
+            <h4>¿Sabes qué hacer cuando tu mascota se atora?</h4>
+            <p>Si no sabes qué hacer en estos casos, en este pequeño articulo te contaremos paso por paso y qué hacer.</p>
+            <div class="link">
+                <a href="{% url 'tip3' %}">Mas detalles</a>
+            </div>
+        </div>
+    </div>
+    <!-- Numero 4 -->
+    <div class="card">
+        <div class="face front">
+            <img src="{% static 'app/img/como_debe_ser_el_nido_de_los_gatitos_22236_1_600.jpg' %}" alt="">
+            <h4>Cuidados para gatitos recien nacidos</h4>
+        </div>
+        <div class="face back">
+            <h4>Cuidados para gatitos recien nacidos</h4>
+            <p>Aquí te mostraremos los cuidados y tips esenciales para los gatos recién nacidos o gatos sin madre que hayas adoptado.</p>
+            <div class="link">
+                <a href="{% url 'tip4' %}">Mas detalles</a>
+            </div>
+        </div>
+    </div>
+    <!-- Numero 5 -->
+    <div class="card">
+        <div class="face front">
+            <img src="{% static 'app/img/geko-con-su-juguete.jpg' %}" alt="">
+            <h4>Tips básicos para el cuidado de animales exoticos</h4>
+        </div>
+        <div class="face back">
+            <h4>Tips básicos para el cuidado de animales exoticos</h4>
+            <p>Aquí te presentamos algunos tips para que puedas criarlos y no traer futuras complicaciones.</p>
+            <div class="link">
+                <a href="{% url 'tip5' %}">Mas detalles</a>
+            </div>
+        </div>
+    </div>
+
+
+    {% endblock %}
